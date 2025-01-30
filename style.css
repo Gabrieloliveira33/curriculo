@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1{
+    font-size: 30px;
+}
+h2{
+    padding: 5px;
+}
+p{
+    padding: 10px;
+}
+.cima{
+    background-color: rgba(3, 3, 87, 0.61);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.contato{
+    color: rgba(141, 139, 139, 0.575);
+    padding: 10px;
+}
+.contato p{
+    padding: 5px;
+}
+.image{
+    margin-top: -175px;
+    padding-left: 50px;
+}   
+.image img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 7px solid rgba(141, 139, 139, 0.575);
+}
+.meio-cima{
+    position: relative;
+}
+.nome{
+    position: absolute;
+    right: 10px;
+    top: -150px;
+}
+.resumo{
+    width: 70%;
+    margin: 20px auto;
+    padding: 10px;
+    border: 2px solid rgba(141, 139, 139, 0.575);
+    border-radius: 10px;
+    text-align: center;
+}
+.meio-baixo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.esquerda{
+    width: 40%;
+    text-align: center;
+    border: 2px solid rgba(141, 139, 139, 0.575);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+.direita{
+    width: 40%;
+    text-align: center;
+    border: 2px solid rgba(141, 139, 139, 0.575);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+.baixo{
+    background-color: rgba(3, 3, 87, 0.61);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.baixo img{
+    width: 75px;
+    height: 75px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.trilho{
+    margin: 10px;
+    width: 50px;
+    height: 25px;
+    background-color: rgba(141, 139, 139, 0.575);
+    border-radius: 150px;
+    position: relative;
+    cursor: pointer;
+}
+.trilho .indicador{
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50%;
+    transform: scale(.8);
+    position: absolute;
+    left: 0;
+    transition: 0.5s;
+}
+.trilho.dark .indicador{
+    left: 25px; 
+    background-color: white;
+}
+body.dark{
+    background-color: black;
+    color: white;
+}
